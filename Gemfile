@@ -8,15 +8,16 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+gem 'spring'
   
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
 end
 
+group :production do
+  gem 'pg', '~> 0.18.4'
+  gem 'rails_12factor', '~> 0.0.3'
 
 end
 
